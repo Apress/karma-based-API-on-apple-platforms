@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C217218211DC0E7005DF6BF /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C217217211DC0E7005DF6BF /* Photos.framework */; };
+		4C21721A211DC0E8005DF6BF /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C217219211DC0E8005DF6BF /* PhotosUI.framework */; };
+		4C21721D211DC0E8005DF6BF /* PhotoProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C21721C211DC0E8005DF6BF /* PhotoProjectViewController.swift */; };
+		4C21721F211DC0E8005DF6BF /* ProjectTypeDescriptionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C21721E211DC0E8005DF6BF /* ProjectTypeDescriptionDataSource.swift */; };
+		4C217222211DC0E8005DF6BF /* PhotoProjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C217220211DC0E8005DF6BF /* PhotoProjectViewController.xib */; };
+		4C217227211DC0EA005DF6BF /* Portraits.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4C217215211DC0E7005DF6BF /* Portraits.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4C250BC62101CEB800905A0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C250BC52101CEB800905A0C /* AppDelegate.swift */; };
+		4C250BC82101CEB800905A0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C250BC72101CEB800905A0C /* ViewController.swift */; };
+		4C250BCA2101CEBC00905A0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C250BC92101CEBC00905A0C /* Assets.xcassets */; };
+		4C250BCD2101CEBC00905A0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C250BCB2101CEBC00905A0C /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C217225211DC0EA005DF6BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C250BBA2101CEB800905A0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C217214211DC0E7005DF6BF;
+			remoteInfo = Portraits;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4C21722B211DC0EA005DF6BF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4C217227211DC0EA005DF6BF /* Portraits.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4C217215211DC0E7005DF6BF /* Portraits.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Portraits.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C217217211DC0E7005DF6BF /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		4C217219211DC0E8005DF6BF /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		4C21721C211DC0E8005DF6BF /* PhotoProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoProjectViewController.swift; sourceTree = "<group>"; };
+		4C21721E211DC0E8005DF6BF /* ProjectTypeDescriptionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTypeDescriptionDataSource.swift; sourceTree = "<group>"; };
+		4C217221211DC0E8005DF6BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PhotoProjectViewController.xib; sourceTree = "<group>"; };
+		4C217223211DC0E8005DF6BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C217224211DC0E8005DF6BF /* Portraits.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Portraits.entitlements; sourceTree = "<group>"; };
+		4C250BC22101CEB800905A0C /* My Mac Privacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Mac Privacy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C250BC52101CEB800905A0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C250BC72101CEB800905A0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C250BC92101CEBC00905A0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C250BCC2101CEBC00905A0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C250BCE2101CEBC00905A0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C250BCF2101CEBC00905A0C /* My_Mac_Privacy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = My_Mac_Privacy.entitlements; sourceTree = "<group>"; };
+		4C6CC87D218762DA003607CD /* My Mac Privacy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "My Mac Privacy.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C217212211DC0E7005DF6BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C217218211DC0E7005DF6BF /* Photos.framework in Frameworks */,
+				4C21721A211DC0E8005DF6BF /* PhotosUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C250BBF2101CEB800905A0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C217216211DC0E7005DF6BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C217217211DC0E7005DF6BF /* Photos.framework */,
+				4C217219211DC0E8005DF6BF /* PhotosUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C21721B211DC0E8005DF6BF /* Portraits */ = {
+			isa = PBXGroup;
+			children = (
+				4C21721C211DC0E8005DF6BF /* PhotoProjectViewController.swift */,
+				4C21721E211DC0E8005DF6BF /* ProjectTypeDescriptionDataSource.swift */,
+				4C217220211DC0E8005DF6BF /* PhotoProjectViewController.xib */,
+				4C217223211DC0E8005DF6BF /* Info.plist */,
+				4C217224211DC0E8005DF6BF /* Portraits.entitlements */,
+			);
+			path = Portraits;
+			sourceTree = "<group>";
+		};
+		4C250BB92101CEB800905A0C = {
+			isa = PBXGroup;
+			children = (
+				4C250BC42101CEB800905A0C /* My Mac Privacy */,
+				4C21721B211DC0E8005DF6BF /* Portraits */,
+				4C217216211DC0E7005DF6BF /* Frameworks */,
+				4C250BC32101CEB800905A0C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C250BC32101CEB800905A0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C250BC22101CEB800905A0C /* My Mac Privacy.app */,
+				4C217215211DC0E7005DF6BF /* Portraits.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C250BC42101CEB800905A0C /* My Mac Privacy */ = {
+			isa = PBXGroup;
+			children = (
+				4C6CC87D218762DA003607CD /* My Mac Privacy.entitlements */,
+				4C250BC52101CEB800905A0C /* AppDelegate.swift */,
+				4C250BC72101CEB800905A0C /* ViewController.swift */,
+				4C250BC92101CEBC00905A0C /* Assets.xcassets */,
+				4C250BCB2101CEBC00905A0C /* Main.storyboard */,
+				4C250BCE2101CEBC00905A0C /* Info.plist */,
+				4C250BCF2101CEBC00905A0C /* My_Mac_Privacy.entitlements */,
+			);
+			path = "My Mac Privacy";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C217214211DC0E7005DF6BF /* Portraits */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C21722A211DC0EA005DF6BF /* Build configuration list for PBXNativeTarget "Portraits" */;
+			buildPhases = (
+				4C217211211DC0E7005DF6BF /* Sources */,
+				4C217212211DC0E7005DF6BF /* Frameworks */,
+				4C217213211DC0E7005DF6BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Portraits;
+			productName = Portraits;
+			productReference = 4C217215211DC0E7005DF6BF /* Portraits.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		4C250BC12101CEB800905A0C /* My Mac Privacy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C250BD22101CEBC00905A0C /* Build configuration list for PBXNativeTarget "My Mac Privacy" */;
+			buildPhases = (
+				4C250BBE2101CEB800905A0C /* Sources */,
+				4C250BBF2101CEB800905A0C /* Frameworks */,
+				4C250BC02101CEB800905A0C /* Resources */,
+				4C21722B211DC0EA005DF6BF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C217226211DC0EA005DF6BF /* PBXTargetDependency */,
+			);
+			name = "My Mac Privacy";
+			productName = "My Mac Privacy";
+			productReference = 4C250BC22101CEB800905A0C /* My Mac Privacy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C250BBA2101CEB800905A0C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Manuel @stuffmc Carrasco Molina";
+				TargetAttributes = {
+					4C217214211DC0E7005DF6BF = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1100;
+					};
+					4C250BC12101CEB800905A0C = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1100;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 4C250BBD2101CEB800905A0C /* Build configuration list for PBXProject "My Mac Privacy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C250BB92101CEB800905A0C;
+			productRefGroup = 4C250BC32101CEB800905A0C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C250BC12101CEB800905A0C /* My Mac Privacy */,
+				4C217214211DC0E7005DF6BF /* Portraits */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C217213211DC0E7005DF6BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C217222211DC0E8005DF6BF /* PhotoProjectViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C250BC02101CEB800905A0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C250BCA2101CEBC00905A0C /* Assets.xcassets in Resources */,
+				4C250BCD2101CEBC00905A0C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C217211211DC0E7005DF6BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C21721D211DC0E8005DF6BF /* PhotoProjectViewController.swift in Sources */,
+				4C21721F211DC0E8005DF6BF /* ProjectTypeDescriptionDataSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C250BBE2101CEB800905A0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C250BC82101CEB800905A0C /* ViewController.swift in Sources */,
+				4C250BC62101CEB800905A0C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C217226211DC0EA005DF6BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C217214211DC0E7005DF6BF /* Portraits */;
+			targetProxy = 4C217225211DC0EA005DF6BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C217220211DC0E8005DF6BF /* PhotoProjectViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C217221211DC0E8005DF6BF /* Base */,
+			);
+			name = PhotoProjectViewController.xib;
+			sourceTree = "<group>";
+		};
+		4C250BCB2101CEBC00905A0C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C250BCC2101CEBC00905A0C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C217228211DC0EA005DF6BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Portraits/Portraits.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9VFFXWKY9V;
+				INFOPLIST_FILE = Portraits/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "biz.pomcast.My-Mac-Privacy.Portraits";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4C217229211DC0EA005DF6BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Portraits/Portraits.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9VFFXWKY9V;
+				INFOPLIST_FILE = Portraits/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "biz.pomcast.My-Mac-Privacy.Portraits";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4C250BD02101CEBC00905A0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C250BD12101CEBC00905A0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4C250BD32101CEBC00905A0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "My Mac Privacy/My Mac Privacy.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9VFFXWKY9V;
+				INFOPLIST_FILE = "My Mac Privacy/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "biz.pomcast.My-Mac-Privacy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4C250BD42101CEBC00905A0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "My Mac Privacy/My Mac Privacy.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9VFFXWKY9V;
+				INFOPLIST_FILE = "My Mac Privacy/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "biz.pomcast.My-Mac-Privacy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C21722A211DC0EA005DF6BF /* Build configuration list for PBXNativeTarget "Portraits" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C217228211DC0EA005DF6BF /* Debug */,
+				4C217229211DC0EA005DF6BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C250BBD2101CEB800905A0C /* Build configuration list for PBXProject "My Mac Privacy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C250BD02101CEBC00905A0C /* Debug */,
+				4C250BD12101CEBC00905A0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C250BD22101CEBC00905A0C /* Build configuration list for PBXNativeTarget "My Mac Privacy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C250BD32101CEBC00905A0C /* Debug */,
+				4C250BD42101CEBC00905A0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C250BBA2101CEB800905A0C /* Project object */;
+}
