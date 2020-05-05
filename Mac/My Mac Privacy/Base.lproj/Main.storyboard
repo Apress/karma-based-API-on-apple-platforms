@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
-        <plugIn identifier="com.apple.MapKitIBPlugin" version="14460.31"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16096"/>
+        <plugIn identifier="com.apple.MapKitIBPlugin" version="16096"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -621,7 +621,7 @@
                                         <menuItem title="Show Sidebar" keyEquivalent="s" id="kIP-vf-haE">
                                             <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
                                             <connections>
-                                                <action selector="toggleSourceList:" target="Ady-hI-5gd" id="iwa-gc-5KM"/>
+                                                <action selector="toggleSidebar:" target="Ady-hI-5gd" id="iwa-gc-5KM"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Enter Full Screen" keyEquivalent="f" id="4J7-dP-txa">
@@ -710,12 +710,11 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="My_Mac_Privacy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="499" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="519" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bPX-Tk-OPU">
-                                <rect key="frame" x="14" y="222" width="123" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bPX-Tk-OPU">
+                                <rect key="frame" x="14" y="222" width="133" height="32"/>
                                 <buttonCell key="cell" type="push" title="Contacts count" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="h31-1G-xST">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -724,13 +723,11 @@
                                     <action selector="contactsCount:" target="XfG-lQ-9wD" id="o5V-0R-ClF"/>
                                 </connections>
                             </button>
-                            <mapView fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wf9-bz-58x">
-                                <rect key="frame" x="20" y="20" width="459" height="189"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <mapView mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wf9-bz-58x">
+                                <rect key="frame" x="20" y="20" width="479" height="189"/>
                             </mapView>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hJw-DB-vaA">
-                                <rect key="frame" x="130" y="222" width="123" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hJw-DB-vaA">
+                                <rect key="frame" x="147" y="222" width="133" height="32"/>
                                 <buttonCell key="cell" type="push" title="Some Contacts" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hqU-df-k9e">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -739,9 +736,8 @@
                                     <action selector="oneContact:" target="XfG-lQ-9wD" id="Zzx-FP-xbW"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6RG-Qr-n19">
-                                <rect key="frame" x="246" y="222" width="123" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6RG-Qr-n19">
+                                <rect key="frame" x="280" y="222" width="137" height="32"/>
                                 <buttonCell key="cell" type="push" title="Select Contacts" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7Z3-Bf-gcW">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -750,9 +746,8 @@
                                     </connections>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4hZ-VS-lYo">
-                                <rect key="frame" x="362" y="222" width="123" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4hZ-VS-lYo">
+                                <rect key="frame" x="410" y="222" width="95" height="32"/>
                                 <buttonCell key="cell" type="push" title="Calendar" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1M2-fI-pFN">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -762,6 +757,24 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="Wf9-bz-58x" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="8GN-rD-v9r"/>
+                            <constraint firstItem="Wf9-bz-58x" firstAttribute="top" secondItem="4hZ-VS-lYo" secondAttribute="bottom" constant="20" symbolic="YES" id="ETx-gk-6nz"/>
+                            <constraint firstItem="6RG-Qr-n19" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hJw-DB-vaA" secondAttribute="trailing" constant="12" symbolic="YES" id="HeO-PX-mHF"/>
+                            <constraint firstItem="6RG-Qr-n19" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bPX-Tk-OPU" secondAttribute="trailing" constant="12" symbolic="YES" id="NIR-hY-qEM"/>
+                            <constraint firstItem="4hZ-VS-lYo" firstAttribute="baseline" secondItem="bPX-Tk-OPU" secondAttribute="baseline" id="V6R-5k-OeA"/>
+                            <constraint firstAttribute="bottom" secondItem="Wf9-bz-58x" secondAttribute="bottom" constant="20" symbolic="YES" id="Y3O-pG-vOJ"/>
+                            <constraint firstItem="4hZ-VS-lYo" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="eqC-60-vM6"/>
+                            <constraint firstItem="Wf9-bz-58x" firstAttribute="top" secondItem="4hZ-VS-lYo" secondAttribute="bottom" constant="20" id="f9d-hZ-I3s"/>
+                            <constraint firstAttribute="trailing" secondItem="4hZ-VS-lYo" secondAttribute="trailing" constant="20" symbolic="YES" id="fDV-mu-etg"/>
+                            <constraint firstItem="hJw-DB-vaA" firstAttribute="leading" secondItem="bPX-Tk-OPU" secondAttribute="trailing" constant="12" id="gcY-XO-FsG"/>
+                            <constraint firstItem="4hZ-VS-lYo" firstAttribute="baseline" secondItem="hJw-DB-vaA" secondAttribute="baseline" id="ham-SH-7NG"/>
+                            <constraint firstItem="4hZ-VS-lYo" firstAttribute="baseline" secondItem="6RG-Qr-n19" secondAttribute="baseline" id="iXq-zJ-5yx"/>
+                            <constraint firstItem="4hZ-VS-lYo" firstAttribute="leading" secondItem="6RG-Qr-n19" secondAttribute="trailing" constant="5" id="omc-tZ-M89"/>
+                            <constraint firstItem="4hZ-VS-lYo" firstAttribute="trailing" secondItem="Wf9-bz-58x" secondAttribute="trailing" id="rN4-Kh-JjN"/>
+                            <constraint firstItem="hJw-DB-vaA" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="153" id="tjc-PG-eW1"/>
+                            <constraint firstItem="Wf9-bz-58x" firstAttribute="leading" secondItem="bPX-Tk-OPU" secondAttribute="leading" id="yB8-4C-iVa"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="Wf9-bz-58x" id="0IT-Id-8oG"/>
