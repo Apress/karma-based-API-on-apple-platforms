@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NFCReaderUsageDescription</key>
+	<string>Reading Some NFC toys.</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>This is the digital version of the police asking you "where were you on that day?".</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Let me look at your beautiful eyes.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>I would love to upload your whole contacts to my server.</string>
+	<key>NSHealthClinicalHealthRecordsShareUsageDescription</key>
+	<string>Are you healthy? Let me tell you!</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>I just want to read if you're fit!</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>Let me sign that you are fit!</string>
+	<key>NSHomeKitUsageDescription</key>
+	<string>I'd like to turn off your lights whenever I'm in the mood...</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>To secretely know where you are, even if the app isn't being used.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>To know where you are so I can play your prefered music at that location.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Here comes the message for Additions.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>I swear I'm not interested in your Metadata.</string>
+	<key>NSSiriUsageDescription</key>
+	<string>Because Siri can access to your Privacy</string>
+	<key>NSUserActivity</key>
+	<array>
+		<string>com.carrascomolina.privacy.contacts</string>
+	</array>
+	<key>NSUserActivityTypes</key>
+	<array>
+		<string>INSendMessageIntent</string>
+		<string>MyPrivacyIntent</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UIStatusBarTintParameters</key>
+	<dict>
+		<key>UINavigationBar</key>
+		<dict>
+			<key>Style</key>
+			<string>UIBarStyleDefault</string>
+			<key>Translucent</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+</dict>
+</plist>
