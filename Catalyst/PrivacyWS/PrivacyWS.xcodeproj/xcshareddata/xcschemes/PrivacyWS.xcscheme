@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4C67F73024630B9700D8B8C9"
-               BuildableName = "PrivacyWS.app"
+               BuildableName = "Privacy.app"
                BlueprintName = "PrivacyWS"
                ReferencedContainer = "container:PrivacyWS.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4C67F73024630B9700D8B8C9"
-            BuildableName = "PrivacyWS.app"
+            BuildableName = "Privacy.app"
             BlueprintName = "PrivacyWS"
             ReferencedContainer = "container:PrivacyWS.xcodeproj">
          </BuildableReference>
@@ -63,7 +63,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4C67F73024630B9700D8B8C9"
-            BuildableName = "PrivacyWS.app"
+            BuildableName = "Privacy.app"
             BlueprintName = "PrivacyWS"
             ReferencedContainer = "container:PrivacyWS.xcodeproj">
          </BuildableReference>
