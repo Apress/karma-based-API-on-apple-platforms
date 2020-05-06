@@ -142,6 +142,7 @@
 		4C59645320AF710400C46DB2 /* LocationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		4C5A13FA21A4AE2E00F4AB4D /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		4C5A13FD21A4C24D00F4AB4D /* Siri.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Siri.entitlements; sourceTree = "<group>"; };
+		4C67F6E72461970E00D8B8C9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4C82C3BA20B81ED5007F465F /* NFCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCVC.swift; sourceTree = "<group>"; };
 		4C82C3BC20B8C1E9007F465F /* CalendarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
 		4C95341F21E8B06E003E48B7 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
@@ -243,6 +244,7 @@
 		4C9A3DF01F7D613400B6CF47 = {
 			isa = PBXGroup;
 			children = (
+				4C67F6E72461970E00D8B8C9 /* README.md */,
 				4C95342321E8D6EF003E48B7 /* UIAlertController.swift */,
 				4C43FE3521A5DF660090FC2D /* Intents.intentdefinition */,
 				4C9A3DFB1F7D613400B6CF47 /* Privacy */,
