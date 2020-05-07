@@ -18,21 +18,37 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YWJ-Rs-jOx">
                                 <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
                             </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KPe-kX-5Tm">
+                                <rect key="frame" x="20" y="20" width="760" height="32"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="didUpdateSegmentedControl" destination="BYZ-38-t0r" eventType="valueChanged" id="fL7-m8-Gh0"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="KPe-kX-5Tm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="6C5-bW-jXP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KPe-kX-5Tm" secondAttribute="trailing" constant="20" id="BNJ-gb-vmo"/>
                             <constraint firstItem="YWJ-Rs-jOx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bqV-p4-hfv"/>
                             <constraint firstItem="YWJ-Rs-jOx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="eSi-Wk-MhI"/>
                             <constraint firstItem="YWJ-Rs-jOx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iRz-WS-3P8"/>
                             <constraint firstItem="YWJ-Rs-jOx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mVv-xO-5Xs"/>
+                            <constraint firstItem="KPe-kX-5Tm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="z3r-6l-BHe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="YWJ-Rs-jOx" id="smL-NY-set"/>
+                        <outlet property="segmentedControl" destination="KPe-kX-5Tm" id="S3J-rC-c9W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="0SD-m0-h9X"/>
             </objects>
             <point key="canvasLocation" x="138.75" y="121"/>
         </scene>
